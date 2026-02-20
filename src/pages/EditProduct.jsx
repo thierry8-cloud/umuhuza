@@ -8,7 +8,7 @@ import LocationSelector from '@/components/ui/LocationSelector';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Label } from '@/components/ui/label';
+import { Label } from '@/components/ui/Label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Upload, X, Save, ArrowLeft } from 'lucide-react';
@@ -306,4 +306,5 @@ export default function EditProduct() {
       </div>
     </div>
   );
+
 }
