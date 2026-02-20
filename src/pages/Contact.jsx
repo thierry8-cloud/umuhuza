@@ -5,7 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Label } from '@/components/ui/label';
+import { Label } from '@/components/ui/Label';
 import { 
   Phone, Mail, MapPin, MessageCircle, Instagram, Twitter, 
   Send, ExternalLink 
@@ -203,4 +203,5 @@ export default function Contact() {
       </div>
     </div>
   );
+
 }
