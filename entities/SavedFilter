@@ -1,0 +1,35 @@
+{
+  "name": "SavedFilter",
+  "type": "object",
+  "properties": {
+    "user_id": {
+      "type": "string",
+      "description": "User ID"
+    },
+    "user_email": {
+      "type": "string",
+      "description": "User email"
+    },
+    "name": {
+      "type": "string",
+      "description": "Filter preset name"
+    },
+    "category": {
+      "type": "string",
+      "description": "Product category"
+    },
+    "action_type": {
+      "type": "string",
+      "description": "Sell or rent"
+    },
+    "filters": {
+      "type": "object",
+      "description": "Filter settings object"
+    }
+  },
+  "required": [
+    "user_id",
+    "name",
+    "filters"
+  ]
+}

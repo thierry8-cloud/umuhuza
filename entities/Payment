@@ -1,0 +1,57 @@
+{
+  "name": "Payment",
+  "type": "object",
+  "properties": {
+    "product_id": {
+      "type": "string",
+      "description": "Related product ID"
+    },
+    "seller_id": {
+      "type": "string",
+      "description": "Seller user ID"
+    },
+    "seller_email": {
+      "type": "string",
+      "description": "Seller email"
+    },
+    "amount": {
+      "type": "number",
+      "description": "Payment amount"
+    },
+    "product_price": {
+      "type": "number",
+      "description": "Original product price"
+    },
+    "payment_method": {
+      "type": "string",
+      "enum": [
+        "mtn_momo"
+      ],
+      "default": "mtn_momo",
+      "description": "Payment method"
+    },
+    "payment_phone": {
+      "type": "string",
+      "description": "Phone number used for payment"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "confirmed",
+        "rejected"
+      ],
+      "default": "pending",
+      "description": "Payment status"
+    },
+    "transaction_reference": {
+      "type": "string",
+      "description": "Transaction reference number"
+    }
+  },
+  "required": [
+    "product_id",
+    "seller_id",
+    "amount"
+  ]
+}

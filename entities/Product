@@ -1,0 +1,164 @@
+{
+  "name": "Product",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Product name"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "real_estate",
+        "vehicles",
+        "construction",
+        "tools",
+        "party",
+        "tech"
+      ],
+      "description": "Product category"
+    },
+    "action_type": {
+      "type": "string",
+      "enum": [
+        "sell",
+        "rent"
+      ],
+      "description": "Whether product is for sale or rent"
+    },
+    "price": {
+      "type": "number",
+      "description": "Product price in RWF"
+    },
+    "description": {
+      "type": "string",
+      "description": "Product description"
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Product image URLs"
+    },
+    "province": {
+      "type": "string",
+      "description": "Province location"
+    },
+    "district": {
+      "type": "string",
+      "description": "District location"
+    },
+    "sector": {
+      "type": "string",
+      "description": "Sector location"
+    },
+    "seller_id": {
+      "type": "string",
+      "description": "Seller user ID"
+    },
+    "seller_name": {
+      "type": "string",
+      "description": "Seller name"
+    },
+    "seller_phone": {
+      "type": "string",
+      "description": "Seller phone number"
+    },
+    "seller_email": {
+      "type": "string",
+      "description": "Seller email"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending_payment",
+        "pending_approval",
+        "approved",
+        "rejected",
+        "hidden"
+      ],
+      "default": "pending_payment",
+      "description": "Product status"
+    },
+    "commission_paid": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether commission has been paid"
+    },
+    "commission_amount": {
+      "type": "number",
+      "description": "Commission amount (5% of price)"
+    },
+    "is_featured": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether product is featured"
+    },
+    "views": {
+      "type": "number",
+      "default": 0,
+      "description": "Number of views"
+    },
+    "average_rating": {
+      "type": "number",
+      "description": "Average rating from reviews"
+    },
+    "review_count": {
+      "type": "number",
+      "default": 0,
+      "description": "Number of reviews"
+    },
+    "bedrooms": {
+      "type": "number",
+      "description": "Number of bedrooms (real estate)"
+    },
+    "bathrooms": {
+      "type": "number",
+      "description": "Number of bathrooms (real estate)"
+    },
+    "vehicle_make": {
+      "type": "string",
+      "description": "Vehicle make (vehicles)"
+    },
+    "vehicle_model": {
+      "type": "string",
+      "description": "Vehicle model (vehicles)"
+    },
+    "vehicle_year": {
+      "type": "number",
+      "description": "Vehicle year (vehicles)"
+    },
+    "vehicle_mileage": {
+      "type": "number",
+      "description": "Vehicle mileage in km (vehicles)"
+    },
+    "capacity": {
+      "type": "number",
+      "description": "Capacity (construction/party equipment)"
+    },
+    "capacity_unit": {
+      "type": "string",
+      "description": "Capacity unit (e.g., tons, people)"
+    },
+    "tech_ram": {
+      "type": "number",
+      "description": "RAM in GB (tech)"
+    },
+    "tech_storage": {
+      "type": "number",
+      "description": "Storage in GB (tech)"
+    },
+    "tech_processor": {
+      "type": "string",
+      "description": "Processor type (tech)"
+    }
+  },
+  "required": [
+    "title",
+    "category",
+    "action_type",
+    "price",
+    "seller_id"
+  ]
+}
